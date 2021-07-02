@@ -6,6 +6,7 @@ import {
 } from "react-router-dom"
 import Register from './screens/Register'
 import Login from './screens/Login'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           </Route>
         </Switch>
       </Router>
+      <Footer />
     </div>
   )
 }
