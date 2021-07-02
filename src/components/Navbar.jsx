@@ -1,7 +1,18 @@
 import React from 'react'
 import '../App.css'
+import { useHistory } from 'react-router'
 
-const Navbar = () => {
+const Navbar = ( props ) => {
+  const history = useHistory()
+
+  const goToRegister = () => {
+    history.push("/register")
+  }
+
+  const goToLogin = () => {
+    history.push("/")
+  }
+
   return (
     <>
       <nav>
@@ -9,7 +20,16 @@ const Navbar = () => {
           <p>Logo</p>
         </div>
         <div>
-          <p>Login</p>
+          {
+            props.page === 'login' ? 
+            (
+              <p onClick={goToRegister}>register</p>
+            ) 
+            :
+            (
+              <p onClick={goToLogin}>login</p>
+            )
+          }
         </div>
       </nav>
     </>

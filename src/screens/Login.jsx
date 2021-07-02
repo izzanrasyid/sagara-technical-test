@@ -15,7 +15,9 @@ const Login = () => {
 
   return (
     <>
-      <Navbar />
+      <Navbar 
+        page="login"
+      />
       <div className="Main">
         <div className="Main-content">
           <div className="Main-content-left">
