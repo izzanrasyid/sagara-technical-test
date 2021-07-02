@@ -1,6 +1,7 @@
 import React from 'react'
 import '../App.css'
 import { useHistory } from 'react-router'
+import logo from '../assets/logo.png'
 
 const Navbar = ( props ) => {
   const history = useHistory()
@@ -17,17 +18,17 @@ const Navbar = ( props ) => {
     <>
       <nav>
         <div>
-          <p>Logo</p>
+          <img className="Logo" src={logo} alt="logo"></img>
         </div>
-        <div>
+        <div className="Nav-link">
           {
             props.page === 'login' ? 
             (
-              <p onClick={goToRegister}>register</p>
+              <p className="Nav-link-font" onClick={goToRegister}>register</p>
             ) 
             :
             (
-              <p onClick={goToLogin}>login</p>
+              <p className="Nav-link-font" onClick={goToLogin}>login</p>
             )
           }
         </div>

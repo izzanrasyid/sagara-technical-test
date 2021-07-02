@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
 .App {
   height: 100vh;
   background-image: url('https://images.unsplash.com/photo-1512425406684-952ff74cb8d1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1073&q=80');
@@ -5,15 +7,60 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+}
+
+.Footer-wrapper {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  position: absolute;
+  color: #e0e0e0;
+  bottom: 0;
+}
+
+.Footer-wrapper span {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+input {
+  outline: none;
+}
+
+.Img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .Input-box {
   height: 10%;
   width: 80%;
   border: none;
-  border-bottom: 1px solid #999;
-  font-size: 20px;
+  font-size: 16px;
   padding: 0 10px;
+}
+
+.Border-bottom {
+  border-bottom: 1px solid #999;
+}
+
+.Border-bottom-red {
+  border-bottom: 1px solid red;
+}
+
+
+.Input-label {
+  color: #000
+}
+
+.Input-label-red {
+  color: red;
 }
 
 .Login-btn {
@@ -34,14 +81,23 @@
 }
 
 .Login-form {
+  padding-top: 50px;
   width: 100%;
   height: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
+.Login-img {
+  height: 400px;
+  width: 400px;
+}
+
+.Logo {
+  height: 75px;
+  width: 75px;
+}
 
 .Main {
   display: flex;
@@ -99,7 +155,7 @@
 @media (max-width: 768px) {
   .Main-content-form {
     width: 89.6%;
-    height: 85%;
+    height: 92%;
     background-color: #fff;
     margin-top: 40px;
     box-shadow: 4px 4px 4px #999;
@@ -115,6 +171,7 @@
   .Main-content-register{
     background-color: #e0e0e0;
     width: 80%;
+    height: 100%;
     display: flex;
     justify-content: center;
   }
@@ -141,6 +198,23 @@ nav {
   background-color: #fff;
 }
 
+.Nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Nav-link-font {
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.Nav-link-font:hover {
+  cursor: pointer;
+  transition: 200ms;
+  color: #f0ad4e;
+}
+
 .Radio {
   margin-top: 20px;
   width: 70%;
@@ -157,14 +231,17 @@ nav {
 }
 
 .Select {
-  height: 10%;
+  height: 30px;
   width: 80%;
-  font-size: 18px;
+  font-size: 16px;
+  appearance: none;
+  padding-left: 20px;
 }
 
 .Small-txt {
   cursor: pointer;
   transition: 200ms;
+  color: #999;
 }
 
 .Small-txt:hover {
